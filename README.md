@@ -41,7 +41,12 @@ Auditing tools and uses
 3.  Echidna - fuzzer
     https://github.com/crytic/echidna
     https://github.com/crytic/building-secure-contracts/blob/master/program-analysis/echidna/finding-transactions-with-high-gas-consumption.md
+    Adding Constructor Arguments: https://github.com/crytic/echidna/issues/693
 
+    (Default for no arguments) Run user-defined property tests: echidna-test contract.sol --test-mode property
+    Detect integer overflows (Solidity 0.8.x+): echidna-test contract.sol --test-mode overflow
+    Find the maximum value for a function: echidna-test contract.sol --test-mode optimization
+    Execute every line of code without any testing target ("unconstrained execution"): echidna-test contract.sol --test-mode exploration
     echidna-test contracts/echidna/Gas.sol --config config/echidna/gas.yaml
 
     (Default for no arguments) Run user-defined property tests: echidna-test contract.sol --test-mode property
