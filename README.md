@@ -61,5 +61,5 @@ Auditing tools and uses
     Required argument: -p <path to directory or file>. Optional argument: -r <path to .xml-file with rules>; by default it uses the built-in rules files.
 
 5.  Mythx
-    A static analyzer that parses the Soldity AST, a symbolic analyzer that detects possible vulnerable states, and a greybox fuzzer that detects vulnerable execution     paths
+    - A static analyzer that parses the Soldity AST, a symbolic analyzer that detects possible vulnerable states, and a greybox fuzzer that detects vulnerable              execution paths
     mythx --api-key key analyze --mode deep hardhat-tester/contracts/xxx.sol
